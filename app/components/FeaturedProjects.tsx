@@ -116,11 +116,11 @@ function FeaturedProjects() {
             {/* LIVE DEMO/SEE ON GITHUB ICONS */}
             <div className="pt-[48px] flex items-center gap-[24px]">
               {/* live demo button */}
-              <Link href={project.liveDemo} className="text-[#d3e97a]">
+              <Link target="_blank" href={project.liveDemo} className="text-[#d3e97a]">
                 <span className="flex items-center gap-1 paragraph font-bold uppercase">Live Demo <span><TbExternalLink size={20} className="pb-1 " /></span></span>
               </Link>
               {/* see on github button */}
-              <Link href={project.github} className="text-[#d3e97a]">
+              <Link target="_blank" href={project.github} className="text-[#d3e97a]">
                 <span className="flex items-center gap-1 paragraph font-bold uppercase">See on Github <span><FaGithub size={20} className="pb-1"/></span></span>
               </Link>
             </div>
