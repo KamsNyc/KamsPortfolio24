@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
 import FeaturedProjects from "./components/FeaturedProjects";
 import About from "./components/About";
+import EmailForm from "./components/EmailForm";
 
 export default function Home() {
   return (
@@ -27,9 +28,9 @@ export default function Home() {
       </div>
 
       {/* CONTACT US */}
-      {/* <div className="px-4 md:px-16">
-        <About />
-      </div> */}
+      <div className="px-4 md:px-16 py-20">
+        <EmailForm />
+      </div>
     </main>
   );
 }
