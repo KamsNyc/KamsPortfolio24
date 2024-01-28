@@ -28,6 +28,8 @@ export default function Home() {
       <div className="px-4 md:px-16 py-20">
         <EmailForm />
       </div>
+
+      
     </main>
   );
 }
