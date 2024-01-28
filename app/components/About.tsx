@@ -30,7 +30,7 @@ function About() {
             skill.
           </p>
           {/* LINK */}
-          <Link href={""} className="text-[#d3e97a]">
+          <Link href={""} className="text-[#d3e97a] hover:text-[#c8e45b] ">
             <span className="flex items-center gap-1 paragraph font-bold uppercase  mt-[54px]">
               More About Me
             </span>

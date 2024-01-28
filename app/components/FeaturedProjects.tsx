@@ -32,7 +32,7 @@ function FeaturedProjects() {
     FetchProject()
   }, [])
   return (
-    <div>
+    <div id="projects">
       {/* HEADER */}
       <div className="mt-[64px] md:mt-[80px] md:max-w-[600px]">
         <h1 className="heading font-bold text-[32px] md:text-[56px] tracking-tighter uppercase">
@@ -116,11 +116,11 @@ function FeaturedProjects() {
             {/* LIVE DEMO/SEE ON GITHUB ICONS */}
             <div className="pt-[48px] flex items-center gap-[24px]">
               {/* live demo button */}
-              <Link target="_blank" href={project.liveDemo} className="text-[#d3e97a]">
+              <Link target="_blank" href={project.liveDemo} className="text-[#d3e97a] hover:text-[#c8e45b]">
                 <span className="flex items-center gap-1 paragraph font-bold uppercase">Live Demo <span><TbExternalLink size={20} className="pb-1 " /></span></span>
               </Link>
               {/* see on github button */}
-              <Link target="_blank" href={project.github} className="text-[#d3e97a]">
+              <Link target="_blank" href={project.github} className="text-[#d3e97a] hover:text-[#c8e45b]">
                 <span className="flex items-center gap-1 paragraph font-bold uppercase">See on Github <span><FaGithub size={20} className="pb-1"/></span></span>
               </Link>
             </div>

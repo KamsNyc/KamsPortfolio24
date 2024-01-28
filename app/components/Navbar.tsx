@@ -32,13 +32,13 @@ function Navbar() {
 
       {/* Link Right side */}
       <div className={`paragraph text-white md:flex items-center gap-8 ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
-        <Link className="paragraph text-[16px] font-medium" href={"#"}>
+        <Link className="paragraph text-[16px] font-medium" href={"http://localhost:3000/#projects"}>
           Work
         </Link>
-        <Link className="paragraph text-[16px] font-medium" href={"#"}>
+        <Link className="paragraph text-[16px] font-medium" href={"/about"}>
           About
         </Link> 
-        <Link className="paragraph text-[16px] font-medium" href={"#"}>
+        <Link className="paragraph text-[16px] font-medium" href={"http://localhost:3000/#contact"}>
           Contact
         </Link>
       </div>
