@@ -18,7 +18,7 @@ function Navbar() {
     <div className="h-[72px] flex items-center justify-between px-4  md:px-16">
       {/* Logo Left side */}
       <div className="text-white ">
-        <Link href={'/'}><h1 className="heading font-[800]">KAMEL SINGH</h1></Link>
+        <Link href={'/'}><h1 className="heading font-[800] hover:text-[#d3e97a]">KAMEL SINGH</h1></Link>
       </div>
 
       {/* Hamburger Menu */}
@@ -32,16 +32,16 @@ function Navbar() {
 
       {/* Link Right side */}
       <div className={`paragraph text-white md:flex items-center gap-8 ${mobileMenuOpen ? 'flex' : 'hidden'}`}>
-      <Link className="paragraph text-[16px] font-medium" href={"/"}>
+      <Link className="paragraph text-[16px] font-medium hover:text-[#d3e97a]" href={"/"}>
           Home
         </Link>
-        <Link className="paragraph text-[16px] font-medium" href={"http://localhost:3000/#projects"}>
+        <Link className="paragraph text-[16px] font-medium hover:text-[#d3e97a]" href={"http://localhost:3000/#projects"}>
           Work
         </Link>
-        <Link className="paragraph text-[16px] font-medium" href={"/about"}>
+        <Link className="paragraph text-[16px] font-medium hover:text-[#d3e97a]" href={"/about"}>
           About
         </Link> 
-        <Link className="paragraph text-[16px] font-medium" href={"http://localhost:3000/#contact"}>
+        <Link className="paragraph text-[16px] font-medium hover:text-[#d3e97a]" href={"http://localhost:3000/#contact"}>
           Contact
         </Link>
       </div>
