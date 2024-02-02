@@ -1,9 +1,14 @@
+import { Badge } from '@/components/ui/badge'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa'
 
 function About() {
+
+  const Skills = [
+    "HTML", "CSS", "JAVASCRIPT", "REACT", "EXPRESS", "MONGODB", "FIGMA", "NODEJS", "TAILWINDCSS", "NEXTJS", "SANITYIO", "WORDPRESS", "SHOPIFY" 
+  ]
   return (
     <div className='px-4 md:px-16'>
       {/* ABOUT SECTION */}
@@ -65,7 +70,27 @@ function About() {
       
 
       {/* MY CAPABILITIES */}
-      <div className="mt-"></div>
+      <div className="mt-[120px]">
+        <div className="flex justify-between">
+      <h1 className="heading font-bold text-[32px] md:text-[56px] tracking-tighter uppercase">
+            My Capabilities
+          </h1>
+          <div className="max-w-[600px]">
+            {/* Description */}
+          <p className='paragraph text-[18px] leading-[150%] text-[#c7c7c7]'>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
+          {/* Skills Badges */}
+          <div className="flex flex-wrap gap-[8px] pt-[32px]">
+            {
+             Skills && Skills.map((skill) => (
+              <Badge className='border border-[#484848] hover:bg-[#d3e97a] hover:text-black cursor-pointer'>{skill}</Badge>
+             ))
+            }
+              </div>
+          </div>
+          </div>
+      </div>
+
+      {/* CONTACT US */}
       
     </div>
   )
