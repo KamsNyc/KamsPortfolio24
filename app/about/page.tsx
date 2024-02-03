@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import { FaExternalLinkAlt } from 'react-icons/fa'
+import EmailForm from '../components/EmailForm'
 
 function About() {
 
@@ -71,15 +72,15 @@ function About() {
 
       {/* MY CAPABILITIES */}
       <div className="mt-[120px]">
-        <div className="flex justify-between">
+        <div className="md:flex justify-between">
       <h1 className="heading font-bold text-[32px] md:text-[56px] tracking-tighter uppercase">
             My Capabilities
           </h1>
-          <div className="max-w-[600px]">
+          <div className="max-w-[600px] pb-14 md:pb-20">
             {/* Description */}
-          <p className='paragraph text-[18px] leading-[150%] text-[#c7c7c7]'>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
+          <p className='paragraph text-[18px] leading-[150%] text-[#c7c7c7] pt-[16px] md:pt-0'>I am always looking to add more skills.Morbi egestas neque eu blandit fermentum. Nulla ac lobortis ligula. Pellentesque ac ex at purus faucibus tristique ut et dolor. </p>
           {/* Skills Badges */}
-          <div className="flex flex-wrap gap-[8px] pt-[32px]">
+          <div className="flex flex-wrap gap-[8px] pt-[24px] md:pt-[32px]">
             {
              Skills && Skills.map((skill) => (
               <Badge className='border border-[#484848] hover:bg-[#d3e97a] hover:text-black cursor-pointer'>{skill}</Badge>
@@ -90,8 +91,13 @@ function About() {
           </div>
       </div>
 
+      {/* HORZONTAL LINE */}
+    <hr className='bg-[#484848]' />
+
       {/* CONTACT US */}
-      
+      <div className="mt-[64px] md:mt-[96px] mb-[80px]">
+      <EmailForm />
+      </div>
     </div>
   )
 }

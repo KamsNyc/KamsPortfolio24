@@ -2,6 +2,8 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import ScrollToTop from "./components/ScrollToTop";
+import { Toaster } from "@/components/ui/toaster"
+
 
 
 export const metadata: Metadata = {
@@ -21,9 +23,10 @@ export default function RootLayout({
         <div className="">
         <Navbar />
         </div>
-        <div className="">
+        <main className="">
         {children}
-        </div>
+        </main>
+        <Toaster />
         <div className="">
           <ScrollToTop />
         </div>

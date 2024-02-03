@@ -4,8 +4,11 @@ import { useState } from "react";
 import axios from "axios";
 import Link from "next/link";
 import Image from "next/image";
+import { useToast } from "@/components/ui/use-toast"
+
 
 const EmailForm = () => {
+  const { toast } = useToast()
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -27,9 +30,21 @@ const EmailForm = () => {
 
       if (response.status === 200) {
         console.log("Email sent successfully");
+
+        // Show success toast
+        toast({
+          title: "Email Sent",
+          description: "Your email has been sent successfully."
+        });
       }
     } catch (error) {
-      console.error("Error sending email:", error);
+      console.log("Error sending email:", error);
+
+      // Show error toast
+      toast({
+        title: "Error",
+        description: `Please fill in all required fields before submitting.'}`
+      });
     }
   };
 

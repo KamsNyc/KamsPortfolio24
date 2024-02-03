@@ -5,7 +5,7 @@ import React from "react";
 function About() {
   return (
     <div className="">
-      <div className=" mt-[  px] md:mt-[120px] md:flex justify-between">
+      <div className=" mt-[60px] md:mt-[120px] md:flex justify-between">
         {/* LEFT SIDE */}
         <div className="">
           <h1 className="heading font-bold text-[32px] md:text-[56px] tracking-tighter uppercase">
